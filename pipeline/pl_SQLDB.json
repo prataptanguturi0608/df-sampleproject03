@@ -97,7 +97,17 @@
 							"outputs": [
 								{
 									"referenceName": "ds_SalesLTTables",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"p_SchemaName": {
+											"value": "@item().schemaName",
+											"type": "Expression"
+										},
+										"p_TableName": {
+											"value": "@item().TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
