@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synap-workspace-proj"
+		},
+		"ls_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"ls_AzureSqlDatabase_password": {
+			"value": ""
+		},
+		"synap-workspace-proj-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synap-workspace-proj.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"ls_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://dlakeproject03.dfs.core.windows.net/"
+		},
+		"ls_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://akv-adeuser0608.vault.azure.net/"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "mfsdbserv01.database.windows.net"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "ProdDb01"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "sa-airbus"
+		},
+		"synap-workspace-proj-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dlakeproject03.dfs.core.windows.net"
+		}
+	}
+}
