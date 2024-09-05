@@ -1,5 +1,5 @@
 {
-	"name": "pl_SQLDB",
+	"name": "pl_ExtractSalesLTTables",
 	"properties": {
 		"activities": [
 			{
