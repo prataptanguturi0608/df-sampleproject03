@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "NB_DT__BronzeToSilver",
+				"name": "NB_DT_BronzeToSilver",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -23,11 +23,11 @@
 				}
 			},
 			{
-				"name": "NB_DT__SilverToGold",
+				"name": "NB_DT_SilverToGold",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "NB_DT__BronzeToSilver",
+						"activity": "NB_DT_BronzeToSilver",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -50,11 +50,11 @@
 				}
 			},
 			{
-				"name": "Notebook1",
+				"name": "NB_DT_GoldToASQL",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "NB_DT__SilverToGold",
+						"activity": "NB_DT_SilverToGold",
 						"dependencyConditions": [
 							"Succeeded"
 						]
