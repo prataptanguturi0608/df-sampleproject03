@@ -1,5 +1,5 @@
 {
-	"name": "Pipeline 1",
+	"name": "CreateViewForAll the Tables IN Gold",
 	"properties": {
 		"activities": [
 			{
@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
