@@ -1,0 +1,18 @@
+{
+	"name": "ds_GoldTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "salesltdb-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "SalesLT",
+				"fileSystem": "gold"
+			}
+		}
+	}
+}
